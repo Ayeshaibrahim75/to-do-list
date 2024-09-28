@@ -1,0 +1,95 @@
+
+        body{
+            font-family: 'Arial', sans-serif;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgb(235, 116, 235);
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+        }
+        h1{
+            color: rgba(137, 43, 226, 0.87);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button{
+            padding: 8px 15px;
+            background-color: rgba(102, 6, 192, 0.87);
+            color :white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 10px;
+            
+        }
+        button:hover{
+            background-color: rgba(124, 22, 219, 0.87);
+        }
+
+        #taskInput{
+            width: 75%;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: border 0.3s;
+            outline: none;
+        }
+        #taskInput:focus{
+            box-shadow: 0 2px 15px rgb(138, 52, 138);
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            max-height: 200px;
+            /*limit the height of the task list*/
+            overflow-y: auto;
+            /*enable vertial scrolling*/
+            margin-bottom: 10px  ;
+        }
+        li {
+            background-color: aliceblue;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        li:hover{
+            background-color: antiquewhite;
+        }
+        /*completed tasks*/
+        .completed {
+            text-decoration: line-through crimson;
+            color: grey;
+        }
+        /* remove button styling*/
+        .remove-btn{
+            background-color: rgba(102, 6, 192, 0.87);
+            border: none;
+            padding: 8px 15px;
+            color: white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .remove-btn:hover{
+            background-color: rgb(94, 115, 230);
+            box-shadow: 3px 3px 5px lightskyblue;
+        }
+    
